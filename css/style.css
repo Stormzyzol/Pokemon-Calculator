@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300&family=Rubik+Iso&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+:root{
+    --primary: rgba(224, 13, 13, 0.795);
+    --secondary: rgb(221, 3, 3);
+    --third: #ee1515;
+    --fourth: #222224;
+    --fifth: #e9e9e9;
+    --sixth: #ee1515;
+    --seventh: rgba(224, 13, 13, 0.795);
+    --light: #fff;
+    --grey: rgba(255, 255, 255, 0.863);
+    --dark: #000;
+
+}
+
+body{
+    background: linear-gradient(180deg, rgba(224,13,13,1) 0%, rgba(0,0,0,1) 50%, rgba(252,252,252,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+    background-attachment: fixed;
+    overflow: hidden;
+   
+}
+
+.great{
+    background: linear-gradient(180deg, rgba(13, 104, 224, 0.795) 0%, rgba(0,0,0,1) 50%, rgba(252,252,252,1) 100%);
+    --primary: #da3d3d;
+    --secondary: #ad1212;
+    --third: #1573ee;
+    --fourth: #222224;
+    --fifth: rgba(13, 104, 224, 0.795);
+    --sixth: #1b67ca;
+    --seventh: rgba(13, 104, 224, 0.795);
+    background-attachment: fixed;
+    
+
+}
+
+.ultra{
+    background: linear-gradient(180deg, rgba(224, 203, 13, 0.795) 0%, rgba(0,0,0,1) 50%, rgba(252,252,252,1) 100%);
+    --primary: rgba(224, 203, 13, 0.795);
+    --secondary: rgba(206, 186, 4, 0.795);
+    --third: #606264;
+    --fourth: #222224;
+    --fifth: rgba(0, 0, 0, 0.795);
+    --sixth: #606264;
+    --seventh: rgba(224, 203, 13, 0.795);
+    --dark: #fff;
+    background-attachment: fixed;
+    
+
+}
+
+.master{
+    background: linear-gradient(180deg, rgba(139, 58, 245, 0.795) 0%, rgba(0,0,0,1) 50%, rgba(252,252,252,1) 100%);
+    --primary: rgba(87, 4, 196, 0.795);
+    --secondary: rgba(53, 4, 117, 0.795) ;
+    --third: #c410c4;
+    --fourth: rgba(87, 4, 196, 0.795);
+    --fifth: #c410c4;
+    --sixth: #df067d;
+    --seventh: rgba(87, 4, 196, 0.795);;
+    --light: #000;
+    background-attachment: fixed;
+  
+    
+
+}
+
+
+#calc{
+    width: 400px;
+    padding: 0.5em;
+    background-color: var(--grey);
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+#calc h3{
+    font-weight: 300;
+    font-size: 1.5em ;
+    color: var(--seventh);
+}
+
+#operations{
+    text-align: right;
+}
+
+#previous-operation,#current-operation{
+    padding: 0.2em;
+    overflow-wrap: break-word ;
+    min-height: 1.6em;
+}
+
+#previous-operation{
+    color: #777;
+    
+}
+
+#current-operation{
+    font-size: 3em;
+    font-weight: 700;
+}
+
+#buttons-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+}
+
+#buttons-container button{
+    
+    border: 1px solid transparent;
+    border-radius: 0 ;
+    height: 3.3em;
+    font-size: 1.2em;
+    background-color: var(--primary);
+    cursor: pointer;
+}
+
+#buttons-container .number{
+    color: var(--dark);
+    background-color: var(--fifth);
+}
+
+#buttons-container button:hover{
+    background-color: var(--secondary);
+}
+
+#buttons-container .number:hover{
+    background-color: var(--sixth);
+}
+
+#buttons-container #equal-btn{
+    grid-column: span 2;
+    background-color: var(--fourth);
+    color: var(--light);
+}
+
+#buttons-container #equal-btn:hover{
+    background-color: 	var(--third);
+    color: var(--dark);
+}
+
+.title{
+    display: flex;
+    align-items: center;
+}
+
+.pokeball img{
+    height: 100px;
+}
+
+.pokeball button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+#greatball{
+    height: 85px;
+    margin-left: 8px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.invisible{
+    display: none;
+}
+
+#ultraball{
+    height: 80px;
+    margin-left: 8px;
+    margin-left: 8px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+#masterball{
+    transform: scaleY(-1);
+    height: 85px;
+    margin-left: 8px;
+    margin-left: 8px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
